@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "NYT Dark",
+  "version": "1.0.0",
+  "description": "Turns on the dark theme already built into nytimes.com.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.nytimes.com/*"],
+      "js": ["dark.js"],
+      "css": ["dark.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

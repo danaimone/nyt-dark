@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #121212;
+  }
+
+  [data-testid="masthead-container"],
+  [data-testid^="nav-dropdown-"],
+  [class*="floatingMiniNav"] {
+    background: #121212 !important;
+    color: #dfdfdf;
+  }
+
+  [data-testid="masthead-container"] button,
+  [data-testid="masthead-container"] a,
+  [class*="floatingMiniNav"] button,
+  [class*="floatingMiniNav"] a {
+    background: transparent !important;
+    color: #dfdfdf !important;
+  }
+
+  [data-testid="user-settings-button"] span,
+  [data-testid="well-section"] :is(a, h2, h3, li, p, span),
+  #site-index :is(a, h2, h3, li, p, span),
+  footer :is(a, li, p, span),
+  .g-infobox :is(a, div, h2, h3, li, p, span):not([class*="has-back"], [class*="has-back"] *) {
+    color: #dfdfdf !important;
+  }
+
+  [data-testid="masthead-container"] svg path,
+  [class*="floatingMiniNav"] svg path,
+  #site-index svg path,
+  a[aria-label*="New York Times"] svg path {
+    fill: #f8f8f8 !important;
+  }
+}
