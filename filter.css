@@ -8,7 +8,13 @@
   video,
   canvas,
   iframe,
-  [style*="background-image"] {
+  [style*="background-image"],
+  [class*="Footer_footer"],
+  [class*="Modal_Background"] {
     filter: invert(1) hue-rotate(180deg);
+  }
+
+  [class*="Footer_footer"] :is(img, video, canvas, iframe, [style*="background-image"]) {
+    filter: none;
   }
 }
