@@ -6,9 +6,13 @@ The news site already has a dark theme, it's just locked to light. This
 extension turns the theme back on and patches the sections it misses (footer,
 nav dropdowns, the homepage section grid).
 
-Cooking, Games, Wirecutter, and The Athletic are separate apps without a usable
-dark theme, so those get a color-inverting filter instead. Photos are flipped
-back so they look normal, but some logos and colors can look a bit off there.
+Cooking, Wirecutter, The Athletic, and the Games home page are separate apps
+without a usable dark theme, so those get a color-inverting filter instead.
+Photos are flipped back so they look normal, but some logos and colors can look
+a bit off there.
+
+The puzzles themselves are left alone, since the filter muddies Wordle's tile
+colors. Use each game's own dark mode setting instead.
 
 It follows your system appearance, so if your computer is in light mode, NYT
 stays light.
@@ -40,7 +44,7 @@ collect or send anything. The whole thing is `dark.js`, `dark.css`, and
 ## If something looks wrong
 
 This relies on NYT's internal class names, so a redesign could break it. Some
-pages I haven't tested (the puzzles themselves, recipes, interactive graphics)
-may have rough spots. Issues with a screenshot are welcome.
+pages I haven't tested (recipes, live blogs, interactive graphics) may have
+rough spots. Issues with a screenshot are welcome.
 
 Not affiliated with The New York Times.
