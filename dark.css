@@ -26,6 +26,23 @@
     color: #dfdfdf !important;
   }
 
+  [data-testid="search-form"],
+  [data-testid="search-form"] :is(div, textarea) {
+    background-color: #121212 !important;
+  }
+
+  [data-testid="search-bodega-result"] :is(a, h4, span),
+  [data-testid="search-form"] :is(h1, h2, h3, p) {
+    color: #dfdfdf !important;
+  }
+
+  [data-testid="search-form"] :is(button, textarea, label, span),
+  nav[aria-label="Page Navigation"] a {
+    color: #dfdfdf !important;
+    border-color: #5a5a5a !important;
+  }
+
+  [data-testid="search-form"] svg path,
   [data-testid="masthead-container"] svg path,
   [class*="floatingMiniNav"] svg path,
   #site-index svg path,
