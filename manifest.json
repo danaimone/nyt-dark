@@ -1,13 +1,32 @@
 {
   "manifest_version": 3,
   "name": "NYT Dark",
-  "version": "1.0.0",
-  "description": "Turns on the dark theme already built into nytimes.com.",
+  "version": "1.1.0",
+  "description": "Dark mode for nytimes.com, using the site's own dark theme where it has one.",
   "content_scripts": [
     {
-      "matches": ["https://*.nytimes.com/*"],
+      "matches": ["https://www.nytimes.com/*"],
+      "exclude_matches": [
+        "https://www.nytimes.com/athletic/*",
+        "https://www.nytimes.com/crosswords*",
+        "https://www.nytimes.com/games/*",
+        "https://www.nytimes.com/puzzles/*",
+        "https://www.nytimes.com/wirecutter/*"
+      ],
       "js": ["dark.js"],
       "css": ["dark.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://cooking.nytimes.com/*",
+        "https://www.nytimes.com/athletic/*",
+        "https://www.nytimes.com/crosswords*",
+        "https://www.nytimes.com/games/*",
+        "https://www.nytimes.com/puzzles/*",
+        "https://www.nytimes.com/wirecutter/*"
+      ],
+      "css": ["filter.css"],
       "run_at": "document_start"
     }
   ]
